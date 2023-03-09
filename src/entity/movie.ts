@@ -29,7 +29,7 @@ export class Movies extends BaseEntity {
   @Column({ type: "varchar", length: 255, nullable: true })
   descriptionTc: string;
 
-  @Column({ type: "varchar", length: 255, nullable: false })
+  @Column({ type: "varchar", length: 255, nullable: true })
   descriptionJp: string;
 
   @Column({ type: "varchar", length: 500, nullable: true })
