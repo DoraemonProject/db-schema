@@ -20,20 +20,20 @@ export class Movies extends BaseEntity {
   @Column({ type: "varchar", length: 255, nullable: true })
   publishDate: string;
 
+  @Column({ type: "varchar", length: 255, unique: true })
+  nameTc: string;
+
   @Column({ type: "varchar", length: 255, nullable: false })
   nameJp: string;
+
+  @Column({ type: "varchar", length: 255, nullable: true })
+  descriptionTc: string;
 
   @Column({ type: "varchar", length: 255, nullable: false })
   descriptionJp: string;
 
   @Column({ type: "varchar", length: 500, nullable: true })
   imageUrl: string;
-
-  @Column({ type: "varchar", length: 255, nullable: true })
-  nameTc: string;
-
-  @Column({ type: "varchar", length: 255, nullable: true })
-  descriptionTc: string;
 
   @CreateDateColumn()
   createdAt: Date;

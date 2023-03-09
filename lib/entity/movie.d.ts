@@ -4,11 +4,11 @@ export declare class Movies extends BaseEntity {
     id: number;
     status: number;
     publishDate: string;
+    nameTc: string;
     nameJp: string;
+    descriptionTc: string;
     descriptionJp: string;
     imageUrl: string;
-    nameTc: string;
-    descriptionTc: string;
     createdAt: Date;
     updatedAt: Date;
     deletedAt: Date;
